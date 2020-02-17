@@ -237,7 +237,7 @@
                 this.$Progress.start();
                 $('#products').modal('show');
                 // Submit the form via a POST request
-                this.form.post('api/products')
+                this.form.post('products')
                     .then(({ data }) => { 
                         console.log(data) 
                         

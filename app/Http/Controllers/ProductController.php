@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+
+use auth;
 use App\Bid;
 use App\Product;
 use Illuminate\Http\Request;
@@ -37,6 +39,9 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+        $user = auth::id();
+
+        
         $this->validate($request, [
             'name' => 'required|string|unique:products,name',
             'sku' => 'required|string|unique:products,sku',
@@ -49,8 +54,10 @@ class ProductController extends Controller
         $product->sku = $request->sku;
         $product->price = $request->price;
         $product->description = $request->description;
-
-        $product->user()->associate( auth::id() );
+        $product->user_id = $user;
+        $product->save();
+        
+        // $product->user()->associate( auth::id() );
 
         return ['message', 'Product Successfully Added'];
     }

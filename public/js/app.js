@@ -70592,7 +70592,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.$Progress.start();
             $('#products').modal('show');
             // Submit the form via a POST request
-            this.form.post('api/products').then(function (_ref2) {
+            this.form.post('products').then(function (_ref2) {
                 var data = _ref2.data;
 
                 console.log(data);
