@@ -14,7 +14,7 @@ NOTICE:
 
 The technologies used are as follows:
 
-Laravel Vue js Jquery, Javascript Bootstrap 4 sweatalert
+Laravel, Vue js, Jquery, Javascript, Bootstrap 4, sweatalert, html5, css3,
 
 Thanks you, will be looking forward to hear from you.
 
