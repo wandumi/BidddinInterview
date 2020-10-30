@@ -1,5 +1,3 @@
-The following Laravel Repository was done to meet your Interview test, of which the Idea and the requirement Have been meet.
-
 To install it on the computer please clone the repository and run the following commands,
 
 php artisan db:seed; NOTE: The commands will ask how many users to be seeded, and in the [10] is the default number that will be run if you just press Enter.. Please follow the prompt for better seeding of the dummy data.
